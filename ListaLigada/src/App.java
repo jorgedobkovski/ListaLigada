@@ -19,5 +19,23 @@ public class App {
        var curso = cursos.pop();
        System.out.println("Você acabou de retirar o curso: " + curso.getNome());
        System.out.println(cursos);
+
+       System.out.println();
+
+       IQueue<String> clientes = new Queue<>();
+       clientes.enqueue("Baudu");
+       clientes.enqueue("Lilo");
+       clientes.enqueue("Jorge");
+       clientes.enqueue("João");
+       clientes.enqueue("Harry Potter");
+
+       System.out.println(clientes);
+       
+       var cliente = clientes.peek();
+       clientes.dequeue();
+
+       System.out.println("Vocë acabou de retirar da fila " + cliente);
+
+       System.out.println(clientes);       
     }
 }
